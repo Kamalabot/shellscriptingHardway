@@ -1,0 +1,20 @@
+  504  seq 5 | xargs 5
+  505  seq 5 | xargs 
+  506  seq 5 | xargs echo
+  507  seq 5 | xargs -t
+  508* seq 5 | xargs 
+  509  ls | xargs ls
+  510  cut -d: -f1 < /etc/passwd | sort | xargs
+  511  ls | xargs -I {} echo "/home/new/{}"
+  512  seq 100 | xargs -I {}
+  520  seq 10 | xargs -I {} touch {}.txt
+  522  ls | cut -d. -f1 | xargs -I {} mv {}.txt {}.tetx
+  528  ls | cut -d. -f1 | cut -d" " -f10| xargs -I {} mv {}.txt {}.txty
+  530  ls | xargs -t
+  531  ls | xargs -t -n
+  532  ls | xargs -t -n 1
+  533  seq 5 | xargs -n 1
+  534  seq 5 | xargs -n 1 -P 1 bash -c 'echo $0; sleep 1'
+  535  seq 5 | xargs -n 1 -P 2 bash -c 'echo $0; sleep 1'
+  536  seq 5 | xargs -n 1 -P 2 bash -c 'echo $0; sleep 1'
+  540  ghist xargs >> /run/media/solverbot/repoA/gitFolders/botoPersonal/shellscripting/xargs

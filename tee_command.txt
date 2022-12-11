@@ -1,0 +1,14 @@
+   92  wget --no-directories --mirror --spider "$url" 2>&1 | tee "$log"
+   93  wget --no-directories --mirror --spider "https://sites.google.com/site/linuxlabjntu09/home" 2>&1 | tee "$log"
+  108  wget --no-directories --mirror --spider "https://sites.google.com/site/linuxlabjntu09/home" 2>&1 | tee "$log"
+  111  wget --no-directories --mirror  "https://sites.google.com/site/linuxlabjntu09/home" 2>&1 | tee "$log"
+  533  cat .bashrc >> bashconf.d | tee 1
+  534  echo "tee world around" | tee conf
+  538  ls | tee homedir
+  540  echo "ls | tee homedir" >> $interstingshell 
+  545  echo "used in vim for root previlege w sudo pacman -S alacritty tee %" >> $interstingshell 
+  547  echo "used in vim for root previlege w$interstingshell tee %" >> $interstingshell 
+  548  echo "used in vim for root previlege w^! tee %" >> $interstingshell 
+  551  echo "echo 1 | sudo tee /proc/sys/kernel/sysrq" >> $interstingshell 
+  555  ghist tee
+  556  ghist tee > /run/media/solverbot/repoA/gitFolders/botoPersonal/shellscripting/tee_command.txt

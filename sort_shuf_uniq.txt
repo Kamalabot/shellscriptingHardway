@@ -1,0 +1,27 @@
+
+543  cat .bashrc | shuf 
+  544  cat .bashrc | shuf 
+  545  cat .bashrc | shuf 
+  546  seq 5 | shuf
+  547  seq 5 | shuf
+  548  seq 5 | shuf -n 1
+  549  seq 5 | shuf -n 1
+  550  seq 5 | shuf -n 1
+  551  shuf -n 5 .bashrc 
+  552  shuf -n 3 -i 1-10 --repeat
+  553  shuf -n 3 -i 1-10 --repeat
+  554  shuf -n 3 -i 1-10 --repeat
+  555  shuf -n 3 -i 1-10 
+  556  sort -r .bashrc 
+  557  sort .bashrc 
+  558  sort -t : -k 3n /etc/passwd
+  559  sort -t -r : -k 3n /etc/passwd
+  560  sort -t -r: -k 3n /etc/passwd
+  561  sort -r: -k 3n /etc/passwd
+  562  sort -t: -k 3n /etc/passwd
+  563  sort -t: -k 1n /etc/passwd
+  564  sort .bashrc | uniq
+  565  sort .bashrc | uniq -u
+  566  sort .bashrc | uniq -u | wc -l
+  567  sort .bashrc | wc -l
+  568  sort .bashrc | uniq -c | wc -l

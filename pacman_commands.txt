@@ -1,0 +1,23 @@
+  155  sudo pacman -S pandoc
+  245  sudo pacman -S tmux
+  264  sudo pacman -S mpv
+  267  pacman -Qqe
+  268  pacman -Qqe > installedPackages.txt
+  270  echo "pacman -Qqe > installedPackages.txt" >> shellscripting/InterestingShell.txt 
+  311  sudo pacman -S tldr
+  319  sudo pacman -S tldr
+  502  sudo pacman -S colorscript
+  572  sudo pacman -Rs vlc
+  573  sudo pacman -Rs phonon-qt5-vlc 
+  574  sudo pacman -Ss phonon-qt5-vlc 
+  575  sudo pacman -Ss vlc 
+  576  sudo pacman -Qs vlc 
+  577  sudo pacman -Qs chrome
+  578  pacman -Qdt
+  579  sudo pacman -Rns $(pacman -Qdtq)
+  580  sudo pacman -Rns $(pacman -Qdt)
+  581  sudo pacman -Rns $(pacman -Qt)
+  582  sudo pacman -Rns $(pacman -Qtq)
+  583  pacman -Qdt
+  584  ghist pacman
+  585  ghist pacman >> /run/media/solverbot/repoA/gitFolders/botoPersonal/shellscripting/pacman_commands.txt

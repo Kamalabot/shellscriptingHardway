@@ -1,0 +1,37 @@
+  535  ps | awk '{print $2}'
+  536  ps | awk '{print $1}'
+  537  cat /etc/passwd | awk -F ":" '{print $1}'
+  538  cat /etc/passwd | awk -F ":" '{print $1:$5:$6}'
+  539  cat /etc/passwd | awk -F ":" '{print $1":"$5":"$6}'
+  540  cat /etc/passwd | awk -F ":" '{print $1"\t"$5"\t"$6}'
+  541  awk 'BEGIN{FS=":"; OFS="-"} {print $1,$6,$7}' /etc/passwd
+  545  awk -F "/" '/^/\// {print $NF}' /etc/shells
+  546  awk -F "/" '/^\// {print $NF}' /etc/shells
+  547  awk -F "/" '/^\// {print $NF}' /etc/shells |uniq
+  548  awk -F "/" '/^\// {print $NF}' /etc/shells |uniq | sort
+  550  df | awk '/\/dev\/loop/ {print $1}'
+  551  df | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$4}'
+  552  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$4}'
+  553  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$2}'
+  554  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$2"\t"$3-$2}'
+  555  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$2"\t"$3+$2}'
+  556  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$2"\t"$3+$2"\t"$3-$2}'
+  557  awk 'length($0) > 10' /etc/shells 
+  558  ps -ef | awk '{ if($NF == "/bin/fish") }'
+  559  ps -ef | awk '{ if($NF == "/bin/fish") print $0 }'
+  560  ps -ef | awk '{ if($NF == "/bin/sh") print $0 }'
+  561  ps -ef | awk '{ if($NF == "/bin/bash") print $0 }'
+  562  ps -ef | awk '{ if($NF == "/bin") print $0 }'
+  563  ps -ef | awk '{ if($NF == "bash") print $0 }'
+  564  ps -ef | awk '{ if($NF == "vim") print $0 }'
+  565  ps -ef | awk '{ if($0 == "root") print $0 }'
+  566  ps -ef | awk '{ if($1 == "root") print $0 }'
+  567  ps -ef | awk '{ if($1 == "root") print $0 }' |wc
+  568  ps -ef | awk '{ if($1 == "root") print $0 }' |count 
+  570  awk 'BEGIN { for(i=5; i<=10; i++) print "The square of", i, "is", i * i;}'
+  576  awk '$1 ~ /^[b,c]/ {print $0}' /home/solverbot/.bashrc 
+  582  awk '$1 ~ /^[b,c]/ {print $0}' /home/solverbot/.bashrc 
+  583  awk '{print substr($0, 4)}' functs.sh
+  584  df -h | awk 'NR==7,NR==11 {print NR, $0}'
+  585  awk 'END {print NR}' /etc/shells
+  586  awk 'END {print NR}' /etc/shells /etc/passwd

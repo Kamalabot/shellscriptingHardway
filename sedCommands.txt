@@ -1,0 +1,80 @@
+  530  clear
+  531  echo ls > playfile.t 
+  532  sed 's#solverbot#hashbot#' < playfile.t > sedfile
+  533  cat sedfile 
+  534  ls > playfile.t 
+  535  sed 's#solverbot#hashbot#' < playfile.t > sedfile
+  536  cat sedfile 
+  537  sed 's# #_#' < playfile.t > seduc
+  538  cat seduc 
+  539  sed 's# #_#g' < playfile.t > seduc
+  540  cat seduc 
+  541  ls
+  542  ls | grep 9
+  543  ls | grep Dec 9
+  544  ls | grep "Dec 9"
+  545  echo "The emach file manager dired" | sed 's/red/green/'
+  546  echo "The emach file manager dired" | sed 's/ red/green/'
+  547  echo "The emach file manager di red" | sed 's/ red/green/'
+  548  echo "The emach file manager di red" | sed 's//green/'
+  549  echo "The emach file manager di red" | sed 's/ /green/'
+  550  cat seduc 
+  551  sed -i 's/Command/New/' seduc 
+  552  cat seduc 
+  553  tldr sed
+  554  sudo pacman -S tldr
+  555   tldr
+  556  cat seduc 
+  557  cat seduc | sed '/The_New/s/t/F/'
+  558  cat seduc | sed '/The_New/s/t/F/g'
+  559  cat seduc | sed '/The_New/s/T/F/g'
+  560  cat seduc | sed '/The_New/s/t/F/g'
+  561  man sed
+  562  sudo pacman -S tldr
+  563  tldr
+  564  whereis tldr
+  565  cat seduc 
+  566  cat seduc | sed 's/_Dec__9_/d'
+  567  cat seduc | sed 's/_Dec__9_/d/'
+  568  cat seduc 
+  569  cat seduc | sed 's/_Dec__9_/d/'
+  570  cat seduc 
+  571  cat seduc | sed 's/_Dec__9_/d/'
+  572  cat seduc | sed 's/_Dec__9_/dd/'
+  573  cat seduc | sed 's/_Dec__9_/d/'
+  574  cat seduc | sed 's/_Dec__9_/d/'
+  575  cat seduc | sed 's/_Dec__6_/dd/'
+  576  cat seduc | sed 's/_Dec__6_/dl/'
+  577  cat /etc/shells | sed 's/usr/u/g'
+  578  cat /etc/shells | sed -e 's/usr/u/g' -e 's/bin/b/g'
+  579  cat /etc/shells | sed -e 's|usr|u|g' -e 's#bin#b#g'
+  580  cat /etc/shells | sed -n '/usr/p'
+  581  cat /etc/shells | sed -n '/bin/p'
+  582  sed -i 's/ *$//' sedfile 
+  583  cat sedfile 
+  584  sed -i 's/ *//' sedfile 
+  585  cat sedfile 
+  586  sed -i 's/[[:space]] *//' sedfile 
+  587  sed -i 's/[[:space]]*//' sedfile 
+  588  sed -i 's/[[:space:]]*//' sedfile 
+  589  sedfile
+  590  cat sedfile 
+  591  sed -i 's/[[:space:]]//' sedfile 
+  592  cat sedfile 
+  593  sed -i 's/[a-z]/\U&/' sedfile 
+  594  cat sedfile 
+  595  sed 's/[a-z]/\U&/' sedfile 
+  596  sed 's/[a-z]/\U&/g' sedfile 
+  597  sed 's/[A-Z]/\L&/g' sedfile 
+  598  sed 11q sedfile 
+  599  awk 'NR < 10' sedfile 
+  600  history | tail -n 15
+  601  history | tail -n 30
+  602  history | tail -n 45
+  603  history | tail -n 75
+  604  history | tail -n 75 | sed 's/history/d'
+  605  history | tail -n 75 | sed 's/history/d/'
+  606  history | tail -n 75 | sed 's/[history,tail]/d/'
+  607  history | tail -n 75 | sed '/[history,tail]/d/'
+  608  history | tail -n 80
+  609  history | tail -n 80 > /run/media/solverbot/repoA/gitFolders/botoPersonal/shellscripting/sedCommands.txt

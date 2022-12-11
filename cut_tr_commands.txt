@@ -1,0 +1,68 @@
+  109  echo "this is an awesome video tutorial" | cut -c 1 5
+  110  echo "this is an awesome video tutorial" | cut -c 1=5
+  111  echo "this is an awesome video tutorial" | cut -c 1-5
+  112  echo "this is an awesome video tutorial" | cut -c 10
+  113  echo "this is an awesome video tutorial" | cut -c 10=
+  114  echo "this is an awesome video tutorial" | cut -c 10-
+  115  echo "this is an awesome video tutorial" | cut -d ' ' 
+  116  echo "this is an awesome video tutorial" | cut -d ' ' -f2
+  117  echo "this is an awesome video tutorial" | cut -d ' ' -f3
+  118  echo "this is an awesome video tutorial" | cut -d ' ' -f5
+  403  gh cut
+  408  ghist cut
+  499  echo "starting cut & tr" >> $interstingshell 
+  501  echo "This is a line for cutting" | cut -c 1-7
+  502  cat .bash_functions_test | cut -c 7
+  503  cat .bash_functions_test | cut -c 7-
+  504  cat .bash_functions_test | cut -c 7-8
+  505  cat .bash_functions_test | cut -d " " -f2
+  506  cat .bashrc | cut -d " " -f2
+  507  cat .bashrc | cut -d "=" -f2
+  508  cat .bashrc | cut -d "=" -f1
+  509  echo "abc def" | cut -f2 -d ' '
+  510  echo " abc def" | cut -f2 -d ' '
+  513  echo " abc  def " | cut -f4 -d ' '
+  514  echo " abc  def " | cut -f3 -d ' '
+  515  echo " abc  def " | cut -f3 -d ' '
+  516  echo " abc  def " | cut -f2 -d ' '
+  517  echo " abc  def " | cut -f2 -d 'c'
+  518  echo " abc  def " | cut -f1 -d 'c'
+  525  ghist cut tr
+  526  ghist cut
+  527  ghist cut > cut_tr_commands.txt
+  143  ls -ltr
+  151  ls -ltr
+  163  touch trial.txt
+  164  echo lynx -dump https://www.redhat.com/sysadmin/linux-skills-home-lab > trial.txt 
+  165  cat trial.txt 
+  166  echo lynx -dump https://www.redhat.com/sysadmin/linux-skills-home-lab > 13_exercise_linux_skillBoost >> trial.txt 
+  167  cat trial.txt 
+  168  echo lynx -dump https://www.redhat.com/sysadmin/linux-skills-home-lab > 13_exercise_linux_skillBoost > trial.txt 
+  169  cat trial.txt 
+  388  ls -ltr
+  501  man tr
+  502  echo "This line is going to be translated"| tr 'a' 'F'
+  503  echo "lets try something more complicated" | tr 'aeio' 'AEIO'
+  504  echo "how about using some classes" | tr '[:upper:]' '[:lower:]'
+  505  echo "ThEre as TO be UPPER Case for using some classes" | tr '[:upper:]' '[:lower:]'
+  506  echo "ThEre as TO be UPPER Case for using some classes" | tr '[:lower:]' '[:upper:]'
+  507  echo "ThEre as TO be UPPER Case for using some classes" | tr -d '[:upper:]'
+  508  echo "ThEre as TO be UPPER Case for using some classes" | tr -d '[:upper:] '
+  509  echo "ThEre as TO be UPPER Caase ffpppoor uuuusing someeee classes" | tr -s '[:upper:] '
+  510  echo "ThEre as TO be UPPER Caase ffpppoor uuuusing someeee classes" | tr -s 'areuo'
+  511  echo "ThEre as TO be UPPER Caase ffpppoor uuuusing someeee classes" | tr -s 'areuopfs'
+  512  echo "This is a line of text" | tr -cd 'aeio'
+  513  echo "This is a line of text" | tr -cd 'aeio '
+  514  echo "This is a line of text" | tr -cd 'aeio \n\'
+  515  echo "This is a line of text" | tr -cd 'aeio \n'
+  517  head /dev/urandom | tr -cd '[:print:]'
+  518* head /dev/urandom | tr -:]'
+  519  head /dev/urandom | tr -cd '[:print:]'
+  520  head /dev/urandom | tr -cd '[:print:]'
+  521  head /dev/urandom | tr -cd '[:alpha:]'
+  522  head /dev/urandom | tr -cd '[:alpha:]'|sed -e 'y/ai/AI/'
+  523  head /dev/urandom | tr -cd '[:alpha:]'|sed -e 'y/ai/d'
+  524  head /dev/urandom | tr -cd '[:alpha:]'|sed -e '/ai/d/'
+  525  head /dev/urandom | tr -cd '[:alpha:]'|sed 's/ai/d/'
+  526  ghist tr
+  527  ghist tr >> /run/media/solverbot/repoA/gitFolders/botoPersonal/shellscripting/cut_tr_commands.txt 

@@ -1,0 +1,500 @@
+    8  vim excelconvertScheduler.ipynb 
+    9  ls
+   10  cd ../../botoPersonal/
+   11  ls
+   12  vim question.txt 
+   13  cd ..
+   14  cd dashBoard\ Designs/fsPipelines/
+   15  ls
+   16  vim mainFunction.py
+   17  vim mainFunction.py 
+   18  vim mainFunction.py 
+   19  nvim mainFunction.py 
+   20  vim mainFunction.py 
+   21  vim mainFunction.py 
+   22  vim mainFunction.py 
+   23  gvim mainFunction.py 
+   24  nvim mainFunction.py 
+   25  pip3 install jupytext
+   26  pip3 install notedown
+   27  gitfolder 
+   28  dashBoard\ Designs/
+   29  clear
+   30  cd dashBoard\ Designs/
+   31  cp Flex\ Bar\ Analysis\ Youtube\ \(complet\ dasboard\).xlsx fsPipelines/fileupload/
+   32  cd fsPipelines/fileupload/
+   33  mv Flex\ Bar\ Analysis\ Youtube\ \(complet\ dasboard\).xlsx Flex_Bar_Analysis_Youtube.xlsx
+   34  ls
+   35  pip3 uninstall jupytext notedown
+   36  cd ..
+   37  ls
+   38  cd ~
+   39  ls
+   40  gitfolder 
+   41  cd dashBoard\ Designs/
+   42  cd fsPipelines/
+   43  ls
+   44  python mainFunction.py 
+   45  python mainFunction.py 
+   46  python mainFunction.py 
+   47  psql -h localhost -U postgres
+   48  ls
+   49  ls
+   50  cd ..
+   51  ls
+   52  rm mainDag.py 
+   53  ./mystartup.sh 
+   54  sudo pacman -Syu
+   55  sudo pacman -Syu
+   56  sudo pacman --help
+   57  ls
+   58  cat mystartup.sh | nc termbin.com 9999
+   59  gitfolder 
+   60  cd dashBoard\ Designs/mediumArticles/
+   61  cat why_i_decided_toVim 
+   62  cat why_i_decided_toVim | nc termbin.com 9999
+   63  lynx https://termbin.com/ebqbi
+   64  clear
+   65  gitfolder 
+   66  cd botoPersonal/
+   67  vim InterestingShell.txt 
+   68  ./mystartup.sh 
+   69  airflow scheduler
+   70  airflow scheduler
+   71  airflow scheduler
+   72  gitfolder 
+   73  mkdir airflow_env
+   74  python3 -m venv airflow
+   75  cd airflow
+   76  ls
+   77  source bin/activate
+   78  pip install airflow  apache-airflow-providers-postgres
+   79  pip install upgrade pip
+   80  pip install --upgrade pip
+   81  pip install airflow  apache-airflow-providers-postgres
+   82  pip3 install airflow  apache-airflow-providers-postgres
+   83  pip3 install apache-airflow apache-airflow-providers-postgres
+   84  which python3
+   85  whereis python3
+   86  ls
+   87  cd bin
+   88  ls
+   89  ls -ltr
+   90  ls -ltr | sed "s/[aei]/u/g"
+   91  ls -ltr | sed "s/[aei]/u/g"|sort
+   92  ls -ltr | sed "s/[aei]/u/g"|sort|grep uct
+   93  ls -ltr | sed "s/[aei]/u/g"|sort|grep uct
+   94  !
+   95  xkill
+   96  airflow webserver -p 8082
+   97  airflow init db
+   98  airflow db init
+   99  pip install sqlite
+  100  pip install sqlite3
+  101  pip install pysqlite3
+  102  airflow db init
+  103  ls
+  104  cd __pycache__/
+  105  ls
+  106  cd ..
+  107  cd ..
+  108  ls
+  109  cd generated/
+  110  ls
+  111  cd ..
+  112  cd include/
+  113  ls
+  114  cd site/
+  115  ls
+  116  cd python3.10/
+  117  ls
+  118  cd greenlet/
+  119  ls
+  120  cd /
+  121  exis
+  122  exit
+  123  gitfolder 
+  124  cd dashBoard\ Designs/
+  125  cd fsPipelines/
+  126  ls
+  127  shasum 
+  128  shasum --help
+  129  shasum - the
+  130  shasum -
+  131  shasum mainDag.py 
+  132  cp mainDag.py /home/solverbot/airflow/dags/
+  133  cp dagHelper.py /home/solverbot/airflow/dags/
+  134  cp dagHelper.py /home/solverbot/airflow/dags/
+  135  cd fileCSV/
+  136  ls
+  137  ls -ltr
+  138  cd ..
+  139  cd fileupload/
+  140  ls
+  141  cd ..
+  142  cd ..
+  143  ls
+  144  cp 2019\ to\ 2020\ Dashboard.xlsx fsPipelines/fileupload/
+  145  cd fsPipelines/fileCSV/
+  146  ls
+  147  pip install apache-airflow-providers-postgres
+  148  airflow connections add 'my_prod_db'     --conn-uri postgres://postgres:1234@127.0.0.1:5432/dashboards'
+  149  airflow connections add 'my_prod_db' --conn-uri 'postgres://postgres:1234@127.0.0.1:5432/dashboards'
+  150  airflow connections add 'my_new_db' --conn-uri 'postgresql://postgres:1234@127.0.0.1:5432/dashboards'
+  151  cd ..
+  152  ls
+  153  cp mainDag_withPG.py /home/solverbot/airflow/dags/
+  154  cd /usr/lib/python3.10/site-packages/airflow/operators/
+  155  ls
+  156  cd ..
+  157  ls
+  158  cd providers/
+  159  ls
+  160  cd ..
+  161  cd ..
+  162  cd apache_airflow_providers_common_sql-1.2.0.dist-info/
+  163  ls
+  164  cat entry_points.txt 
+  165  cat top_level.txt 
+  166  cd ..
+  167  cd ..
+  168  ls
+  169  pip install --solverbot apache-airflow-providers-postgres
+  170  pip install --user apache-airflow-providers-postgres
+  171  pip install apache-airflow-providers-common-sql
+  172  cd site-packages/airflow/providers/
+  173  ls
+  174  pip install --solverbot apache-airflow-providers-postgres[amazon]
+  175  pip install apache-airflow-providers-postgres[amazon]
+  176  locate postgres
+  177  find postgres
+  178  cd ..
+  179  cd ..
+  180  find postgres
+  181  find postgres .
+  182  find postgres . | grep postgres
+  183  history | grep postgres
+  184  gitfolder 
+  185  cd airflow
+  186  cd ..
+  187  ls
+  188  cd airflow_env/
+  189  ls
+  190  cd ..
+  191  cd airflow
+  192  ls
+  193  cd ..
+  194  rmdir airflow_env/
+  195  source airflow/bin/activate
+  196  airflow scheduler
+  197  cd airflow/
+  198  ls
+  199  cd bin/
+  200  ls
+  201  cd ..
+  202  ls
+  203  cd lib
+  204  ls
+  205  cd python3.10/
+  206  ls
+  207  cd site-packages/
+  208  ls
+  209  cd airflow/
+  210  ls
+  211  exit
+  212  sudo pacman -Syu
+  213  ./mystartup.sh 
+  214  psql -h localhost -U postgres
+  215  airflow scheduler
+  216  airflow scheduler
+  217  airflow scheduler
+  218  airflow scheduler
+  219  airflow scheduler
+  220  gitfolder 
+  221  git clone https://github.com/Kamalabot/dagflowPostgres.git
+  222  cd dagflowPostgres/
+  223  mkdir dags
+  224  mkdir fileupload
+  225  mkdir fileCSV
+  226  cp ../dashBoard\ Designs/fsPipelines/mainDag_withSpark.py 
+  227  cp ../dashBoard\ Designs/fsPipelines/mainDag_withSpark.py dags/
+  228  cp ../dashBoard\ Designs/fsPipelines/mainDag.py dags/
+  229  cp ../dashBoard\ Designs/fsPipelines/fileupload/ fileupload/
+  230  cp -r ../dashBoard\ Designs/fsPipelines/fileupload/ fileupload/
+  231  cp ../dashBoard\ Designs/fsPipelines/dagHelper.py dags/
+  232  cd dags/
+  233  vim mainDag_withSpark.py 
+  234  airflow webserver -p 8081
+  235  airflow webserver -p 8081
+  236  gitfolder 
+  237  cd dashBoard\ Designs/
+  238  cd fsPipelines/
+  239  vim clusterdash.config 
+  240  airflow db init
+  241  airflow --help
+  242  airflow webserver --help
+  243  airflow webserver -p 8081
+  244  airflow webserver -p 8081
+  245  htop
+  246  cal
+  247  date
+  248  bc
+  249  cd airflow/
+  250  ls
+  251  ls -ltr
+  252  cd ..
+  253  ls
+  254  gitfolder 
+  255  ls
+  256  sudo rm -rf airflow/
+  257  cd botoPersonal/
+  258  git st
+  259  git add InterestingShell.txt 
+  260  git ci -m "Adding some commands in interesting shell"
+  261  git push origin main
+  262  cd ../dashBoard\ Designs/
+  263  cd fsPipelines/
+  264  ls
+  265  cp mainDag_withSpark.py /home/solverbot/airflow/dags/
+  266  cp dagHelper.py /home/solverbot/airflow/dags/
+  267  cp clusterdash.config /home/solverbot/airflow/dags/
+  268  cat clusterdash.config 
+  269  airflow db init
+  270  ls
+  271  cp dagHelper.py /home/solverbot/airflow/dags/
+  272  killall chrome
+  273  ps -
+  274  ps -ef | grep chrome
+  275  cp mainDag_withSpark.py /home/solverbot/airflow/dags/
+  276  cat /home/solverbot/airflow/dags/mainDag_withSpark.py 
+  277  cat /home/solverbot/airflow/dags/mainDag.py 
+  278  cp mainDag_withSpark.py /home/solverbot/airflow/dags/
+  279  cd fileupload/
+  280  ls
+  281  cp dagHelper.py /home/solverbot/airflow/dags/
+  282  cd ..
+  283  ls
+  284  cp dagHelper.py /home/solverbot/airflow/dags/
+  285  cp dagHelper.py /home/solverbot/airflow/dags/
+  286  xkill
+  287  cp mainDag_withSpark.py /home/solverbot/airflow/dags/
+  288  cp dagHelper.py /home/solverbot/airflow/dags/
+  289  cp mainDag_withSpark.py /home/solverbot/airflow/dags/
+  290  cat /home/solverbot/airflow/dags/dagHelper.py 
+  291  cp dagHelper.py /home/solverbot/airflow/dags/
+  292  telnet 127.0.0.1:5432
+  293  telnet 127.0.0.1:5431
+  294  telnet 127.0.0.1 5431
+  295  telnet 127.0.0.1 5432
+  296  telnet 127.0.0.1 5432
+  297  cp dagHelper.py /home/solverbot/airflow/dags/
+  298  cp dagHelper.py /home/solverbot/airflow/dags/
+  299  cat /home/solverbot/airflow/dags/dagHelper.py 
+  300  cp mainDag_withSpark.py /home/solverbot/airflow/dags/
+  301  gitfolder 
+  302  cd dashBoard\ Designs/
+  303  ls 
+  304  vim ChallengeSoln.txt 
+  305  cd fsPipelines/
+  306  vim dagHelper.py 
+  307  vim dagHelper.py 
+  308  cd ../mediumArticles/
+  309  ls
+  310  vim dagflow_to_postgres.txt
+  311  br
+  312  BR
+  313  broot
+  314  exit
+  315  br
+  316  ./mystartup.sh 
+  317  gitfolder 
+  318  cd dashBoard\ Designs/
+  319  cd mediumArticles/
+  320  ls
+  321  vim dagflow_postgres.txt
+  322  gitfolder 
+  323  cd dagflowPostgres/
+  324  ls
+  325  cd dags/
+  326  ll
+  327  ls -al
+  328  cd ..
+  329  cd dags/
+  330  rmdir -rf 
+  331  rmdir -rf __pycache__/
+  332  rm -rf __pycache__/
+  333  cd ..
+  334  ls
+  335  cd file
+  336  cd fileCSV/
+  337  ls
+  338  cd ..
+  339  cd fileupload/
+  340  ls
+  341  cd fileupload/
+  342  ls
+  343  cd *.xlsx ../
+  344  mv *.xlsx ../
+  345  cd ..
+  346  ls
+  347  rm fileupload/
+  348  rmdir fileupload/
+  349  cd ..
+  350  ls
+  351  git st
+  352  git add .
+  353  git ci -m "updated the file structure"
+  354  cd ../dashBoard\ Designs/mediumArticles/
+  355  ps
+  356  ps | awk '{print $2}'
+  357  ps | awk '{print $1}'
+  358  cat /etc/passwd | awk -F ":" '{print $1}'
+  359  cat /etc/passwd | awk -F ":" '{print $1:$5:$6}'
+  360  cat /etc/passwd | awk -F ":" '{print $1":"$5":"$6}'
+  361  cat /etc/passwd | awk -F ":" '{print $1"\t"$5"\t"$6}'
+  362  awk 'BEGIN{FS=":"; OFS="-"} {print $1,$6,$7}' /etc/passwd
+  363  history | tail -n 10
+  364  cat /etc/shells 
+  365  aws 
+  366  awk -F "/" '/^/\// {print $NF}' /etc/shells
+  367  awk -F "/" '/^\// {print $NF}' /etc/shells
+  368  awk -F "/" '/^\// {print $NF}' /etc/shells |uniq
+  369  awk -F "/" '/^\// {print $NF}' /etc/shells |uniq | sort
+  370  df
+  371  df | awk '/\/dev\/loop/ {print $1}'
+  372  df | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$4}'
+  373  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$4}'
+  374  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$2}'
+  375  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$2"\t"$3-$2}'
+  376  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$2"\t"$3+$2}'
+  377  df -h | awk '/\/dev\/loop/ {print $1"\t"$3"\t"$2"\t"$3+$2"\t"$3-$2}'
+  378  awk 'length($0) > 10' /etc/shells 
+  379  ps -ef | awk '{ if($NF == "/bin/fish") }'
+  380  ps -ef | awk '{ if($NF == "/bin/fish") print $0 }'
+  381  ps -ef | awk '{ if($NF == "/bin/sh") print $0 }'
+  382  ps -ef | awk '{ if($NF == "/bin/bash") print $0 }'
+  383  ps -ef | awk '{ if($NF == "/bin") print $0 }'
+  384  ps -ef | awk '{ if($NF == "bash") print $0 }'
+  385  ps -ef | awk '{ if($NF == "vim") print $0 }'
+  386  ps -ef | awk '{ if($0 == "root") print $0 }'
+  387  ps -ef | awk '{ if($1 == "root") print $0 }'
+  388  ps -ef | awk '{ if($1 == "root") print $0 }' |wc
+  389  ps -ef | awk '{ if($1 == "root") print $0 }' |count 
+  390  count --help
+  391  awk 'BEGIN { for(i=5; i<=10; i++) print "The square of", i, "is", i * i;}'
+  392  history | grep awk
+  393  cd ../../botoPersonal/
+  394  ls
+  395  cd shellscripting/
+  396  history | grep awk
+  397  awk '$1 ~ /^[b,c]/ {print $0}' /home/solverbot/.bashrc 
+  398  ls
+  399  cat functs.sh 
+  400  aws '{print substr($0, 4)}' funct.sh
+  401  aws '{print substr($0, 4)}' functs.sh
+  402  cat functs.sh 
+  403  awk '$1 ~ /^[b,c]/ {print $0}' /home/solverbot/.bashrc 
+  404  awk '{print substr($0, 4)}' functs.sh
+  405  df -h | awk 'NR==7,NR==11 {print NR, $0}'
+  406  awk 'END {print NR}' /etc/shells
+  407  awk 'END {print NR}' /etc/shells /etc/passwd
+  408  history | grep awk
+  409  history | grep awk > awk_command_history.txt
+  410  vim awk_command_history.txt 
+  411  ls
+  412  git st
+  413  git add awk_command_history.txt 
+  414  git ci -m "adding awk"
+  415  git push origin main
+  416  sudo pacman -S broot
+  417  br
+  418  cd ../../dashBoard\ Designs/
+  419  git st
+  420  git add mediumArticles/dagflow_postgres.txt 
+  421  git ci -m "writing about dag"
+  422  git push origin main
+  423  ps -ef
+  424  ps -ef | grep vim
+  425  gitfolder 
+  426  br
+  427  br
+  428  br
+  429  top
+  430  ps -ef
+  431  ps -ef | grep xmonad
+  432  xmonad
+  433  whereis xmonad
+  434  xmonad
+  435  xmonad
+  436  xmonad --help
+  437  xmonad --version
+  438  xmonad --recompile
+  439  xmonad --replace
+  440  pgrep xmohad
+  441  pgrep xmonad
+  442  kill 313w
+  443  kill 3136
+  444  xmonad --help
+  445  xmonad
+  446  xkill
+  447  xkill
+  448  killall xwfm & xmonad
+  449  killall xmonad
+  450  killall xwfm & xmonad
+  451  xfce
+  452  start_logs.sh 
+  453  tail_logs.sh 
+  454  airflow db init
+  455  gitfolder 
+  456  history | grep pip
+  457  history | grep postgre
+  458  airflow scheduler
+  459  cd dashBoard\ Designs/
+  460  cp fsPipelines/mainDag_withPG.py ~solverbot/airflow/dags/
+  461  airflow scheduler
+  462  sudo pacman -S flameshot
+  463  sudo pacman -S copyq
+  464  copyq 
+  465  flameshot 
+  466  flameshot screen 
+  467  flameshot gui 
+  468  flameshot config
+  469  whereis flameshot
+  470  cal
+  471  airflow webserver -p 8080
+  472  airflow webserver -p 8080
+  473  gitfolder 
+  474  cd dashBoard\ Designs/fsPipelines/
+  475  ls
+  476  vim dagHelper.py 
+  477  cat ~solverbot/airflow/dags/mainDag_withPG.py 
+  478  ./mystartup.sh 
+  479  rig
+  480  cowsay
+  481  ponysay
+  482  sl
+  483  eyes
+  484  lolcal
+  485  lolcat
+  486  toilet
+  487  history | tail -n 7
+  488  history | tail -n 10
+  489  history | tail -n 12
+  490  history | tail -n 12 | sed 's/^history/d'
+  491  history | tail -n 12 | sed 's/^history/d'
+  492  history | tail -n 12 | sed 's/^history/d'
+  493  sudo pacman -S fortune cowsay cowthink lolcat sl figlet toilet ponysay cmatrix rig
+  494  sudo pacman -S fortune 
+  495  history 
+  496  snapd fortune
+  497  snap fortune
+  498  snap help
+  499  snap install fortune
+  500  snap install fortune
+  501  history
+  502  gitfolder 
+  503  cd botoPersonal/
+  504  ls
+  505  cd shellscripting/
+  506  ls
+  507  history > commandline_tomfoolery.txt

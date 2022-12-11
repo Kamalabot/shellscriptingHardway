@@ -1,0 +1,14 @@
+  435  git ci -m "completed the cut and tr. Starting zip"
+  562  gzip tee_command.txt 
+  564  gunzip tee_command.txt.gz 
+  566  zip commandline.zip *.txt
+  568  unzip commandline.zip 
+  571  zipdetails commandline.zip 
+  572  zipdetails commandline.zip | grep Size
+  573  zipdetails commandline.zip 
+  574  zipgrep cat commandline.zip 
+  575  zipinfo commandline.zip 
+  576  zipsplit -n 9366 commandline.zip 
+  578  rm command*.zip
+  580  ghist zip
+  581  ghist zip >> zipcommand.txt
