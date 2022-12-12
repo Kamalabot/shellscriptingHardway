@@ -15,18 +15,26 @@ yesno()
     #
     read -p "$* (y/n):" yn junk
 
-    case yn in
+    case $yn in
       y|Yes|yes)
         echo this is yes
-        return 1
+        return 0 
         ;;
       n|No|no)
         echo this is no
-        return 0
+        return 1 
+        ;;
+      *)
+        echo please enter Yes or no:
         ;;
     esac
   done
 }
 
-
-        
+while :
+do
+  if yesno Do you really wish to quit now
+  then
+    exit
+  fi
+done
