@@ -8,9 +8,8 @@
 for f in `ls $1` 
 do
   echo The file name is $f 
-  if [ -f "$f" ] 
+  if [ -f $f -a -r $f -a -w $f -a -x $f ]
   then
-    tail -n 1 "$f"
-    echo `wc -l "$f"` is number of lines  
+    echo $f is given necessary permissions
   fi
 done
