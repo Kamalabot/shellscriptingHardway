@@ -1,1 +1,17 @@
 SELECT COUNT(*) FROM pg_stat_activity : to get the connection details of PG
+dumping the database: pg_dump -h localhost -U postgres -p 5432 test > testing_db.sql
+Writing the dump back to database: psql -h localhost -U postgres test < testing_db.sql: Ensure you have mentioned the DB name
+select min_val, max_val from pg_settings where name='max_connections';
+SHOW config_file;
+There can empty spaces and 'null' mentioned cells. The later can be handled by converting them to empty spaces
+There are DELIMITER E'delimiter' option for using \t with CSV, but reading the documentation informed that is wrong way of doing it. Need to use the Text mode
+COPY hr_table(employee_id, first_name, last_name, email, phone, hire_dt, job_id, salary, commission, manager_id, department_id) FROM 'hr_employees.csv' WITH (FORMAT TEXT);
+Entity relation diagram can be taken from dbeaver application, using the view ER diagram is clicked. The diagram can be saved and opened in any of the draw_io tools
+
+Steps to understand Data:
+
+- First create the tables of the data inside the database manually, and load it inside the database.
+- Understand whether the table is transactional or Non-transactional. 
+- Next try to establish the connectivity between each of the tables. 
+- Create the Entity Relationship diagram of the tables for better view of the entire table.
+- Based on the ER diagram, check if there are tables that have hierarchical Relationship
