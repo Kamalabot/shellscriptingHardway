@@ -15,3 +15,4 @@ Steps to understand Data:
 - Next try to establish the connectivity between each of the tables. 
 - Create the Entity Relationship diagram of the tables for better view of the entire table.
 - Based on the ER diagram, check if there are tables that have hierarchical Relationship
+The scripts are executed at database prompt maintenance=# \i /run/media/solverbot/repoA/gitFolders/data-engineering-spark/data/retail_db/load_db_tables_pg.sql 
