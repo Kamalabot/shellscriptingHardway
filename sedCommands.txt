@@ -143,3 +143,115 @@ sed 's/^[ ^t]*//;s/[ ^]*$//' file.txt	delete all spaces in front and at the end 
 sed '1~3d' file.txt	delete every third line, starting with the first
 sed ‘/^$/d’ in.txt > out.txt	delete all the blank lines from a file
 sed '0,/pattern_to_delete/{//d;}' file.txt	delete only first match from a file
+
+How to use sed to work with a CSV file? Or How to work with any file in which fields are separated by a delimiter?
+
+Let us consider a sample CSV file with the following content:
+cat file
+Solaris,25,11
+Ubuntu,31,2
+Fedora,21,3
+LinuxMint,45,4
+RedHat,12,5
+
+1. To remove the 1st field or column :
+$ sed 's/[^,]*,//' file
+25,11
+31,2
+21,3
+45,4
+12,5
+   This regular expression searches for a sequence of non-comma([^,]*) characters and deletes them which results in the 1st field getting removed.
+
+2. To print only the last field, OR remove all fields except the last field:
+$ sed 's/.*,//' file
+11
+2
+3
+4
+5
+  This regex removes everything till the last comma(.*,) which results in deleting all the fields except the last field.
+
+3. To print only the 1st field:
+$ sed 's/,.*//' file
+Solaris
+Ubuntu
+Fedora
+LinuxMint
+RedHat
+    This regex(,.*) removes the characters starting from the 1st comma till the end resulting in deleting all the fields except the last field.
+
+4. To delete the 2nd field:
+$ sed 's/,[^,]*,/,/' file
+Solaris,11
+Ubuntu,2
+Fedora,3
+LinuxMint,4
+RedHat,5
+    The regex (,[^,]*,)  searches for a comma and sequence of characters followed by a comma which results in matching the 2nd column, and replaces this pattern matched with just a comma, ultimately ending in deleting the 2nd column.
+Note: To delete the fields in the middle gets more tougher in sed since every field has to be matched literally.
+
+5. To print only the 2nd field:
+$ sed 's/[^,]*,\([^,]*\).*/\1/' file
+25
+31
+21
+45
+12
+   The regex matches the first field, second field and the rest, however groups the 2nd field alone. The whole line is now replaced with the 2nd field(\1), hence only the 2nd field gets displayed.
+
+6. Print only lines in which the last column is a single digit number:
+$ sed -n '/.*,[0-9]$/p' file
+Ubuntu,31,2
+Fedora,21,3
+LinuxMint,45,4
+RedHat,12,5
+  The regex (,[0-9]$) checks for a single digit in the last field and the p command prints the line which matches this condition.
+
+7. To number all lines in the file:
+$ sed = file | sed 'N;s/\n/ /'
+1 Solaris,25,11
+2 Ubuntu,31,2
+3 Fedora,21,3
+4 LinuxMint,45,4
+5 RedHat,12,5
+    This is simulation of cat -n command. awk does it easily using the special variable NR. The '=' command of sed gives the line number of every line followed by the line itself. The sed output is piped to another sed command to join every 2 lines.
+
+8. Replace the last field by 99 if the 1st field is 'Ubuntu':
+$ sed 's/\(Ubuntu\)\(,.*,\).*/\1\299/' file
+Solaris,25,11
+Ubuntu,31,99
+Fedora,21,3
+LinuxMint,45,4
+RedHat,12,5
+  This regex matches 'Ubuntu' and till the end except the last column and groups each of them as well. In the replacement part, the 1st and 2nd group along with the new number 99 is substituted.
+
+9. Delete the 2nd field if the 1st field is 'RedHat':
+$ sed 's/\(RedHat,\)[^,]*\(.*\)/\1\2/' file
+Solaris,25,11
+Ubuntu,31,2
+Fedora,21,3
+LinuxMint,45,4
+RedHat,,5
+      The 1st field 'RedHat', the 2nd field and the remaining fields are grouped, and the replacement is done with only 1st and the last group , resuting in getting the 2nd field deleted.
+
+10. To insert a new column at the end(last column) :
+$ sed 's/.*/&,A/' file
+Solaris,25,11,A
+Ubuntu,31,2,A
+Fedora,21,3,A
+LinuxMint,45,4,A
+RedHat,12,5,A
+   The regex (.*) matches the entire line and replacing it with the line itself (&) and the new field.
+
+11. To insert a new column in the beginning(1st column):
+$ sed 's/.*/A,&/' file
+A,Solaris,25,11
+A,Ubuntu,31,2
+A,Fedora,21,3
+A,LinuxMint,45,4
+A,RedHat,12,5
+     Same as last example, just the line matched is followed by the new column.
+
+Note: sed is generally not preferred on files which has fields separated by a delimiter because it is very difficult to access fields in sed unlike awk or Perl where splitting fields is a breeze.
+
