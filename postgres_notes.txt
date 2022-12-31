@@ -16,3 +16,8 @@ Steps to understand Data:
 - Create the Entity Relationship diagram of the tables for better view of the entire table.
 - Based on the ER diagram, check if there are tables that have hierarchical Relationship
 The scripts are executed at database prompt maintenance=# \i /run/media/solverbot/repoA/gitFolders/data-engineering-spark/data/retail_db/load_db_tables_pg.sql 
+postgres service :sudo systemctl status postgresql
+sudo -u postgres -i to enter the postgres user setting
+/usr/lib/postgresql/15/bin/pg_ctl -D /var/lib/postgres/data -l logfile start
+once you set up new pgserver, connect to a database and then you can set password, like \c postgres and then \password
+In order to allow connection the postgresql.conf and pg_hba.conf file inside the /postgres/data needs to modified
