@@ -1,0 +1,27 @@
+-v : verbose
+-r : copies data recursively (but don’t preserve timestamps and permission while transferring data.
+-a : archive mode, which allows copying files recursively and it also preserves symbolic links, file permissions, user & group ownerships, and timestamps.
+-z : compress file data.
+-h : human-readable, output numbers in a human-readable format.
+for a single file >> rsync -zvh backup.tar.gz /tmp/backups/
+
+for a folder >> rsync -azvh /run/media/solverbot/repoA/gitFolders/shellscriptingHardway/ /run/media/solverbot/repoB/tempShell/
+
+for remote synching >>  rsync -azvh /run/media/solverbot/repoA/gitFolders/botoPersonal/ kali@192.168.64.229:/home/kali/sync_dir
+
+With rsync, we can use SSH (Secure Shell) for data transfer, using SSH protocol while transferring our data you can be ensured that your data is being transferred in a secured connection with encryption so that nobody can read your data while it is being transferred over the wire on the internet.
+
+rsync -azvhe ssh /run/media/solverbot/repoA/gitFolders/shellscriptingHardway/ kali@192.168.64.229:/home/kali/enc_dir
+
+When syncing remote directories directories use the -a and -e flag. 
+
+When syncing directories with the -a no need to include the final '/' that will create 
+a new directory in the remote
+The below command provides the progress
+rsync -azvh --progress /run/media/solverbot/repoC/Programming_Course_Vids /run/media/solverbot/repoE/
+
+selective foldes can be synced by 
+
+rsync -azvh --progress --include 'r*' /run/media/solverbot/repoC/Programming_Course_Vids /run/media/solverbot/repoE/
+
+rsync -azvh --progress --exclude 't*' /run/media/solverbot/repoC/Programming_Course_Vids /run/media/solverbot/repoE/
