@@ -21,3 +21,8 @@ sudo -u postgres -i to enter the postgres user setting
 /usr/lib/postgresql/15/bin/pg_ctl -D /var/lib/postgres/data -l logfile start
 once you set up new pgserver, connect to a database and then you can set password, like \c postgres and then \password
 In order to allow connection the postgresql.conf and pg_hba.conf file inside the /postgres/data needs to modified
+The key to connecting with postgres, setting up tunnel so the network can see the port
+to connect to psql -h 192.168.13.229 -U postgres -p 5432
+Tunnel config for postgres: ssh -L 5433:localhost:5432 kali@192.168.13.229
+pg_dump -h localhost -U postgres test > test_database.sql
+to write data back in database psql -d theroodb -f throoedb.sql
