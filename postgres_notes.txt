@@ -26,3 +26,4 @@ to connect to psql -h 192.168.13.229 -U postgres -p 5432
 Tunnel config for postgres: ssh -L 5433:localhost:5432 kali@192.168.13.229
 pg_dump -h localhost -U postgres test > test_database.sql
 to write data back in database psql -d theroodb -f throoedb.sql
+if there is datestyle error then use SET DateStyle TO European;

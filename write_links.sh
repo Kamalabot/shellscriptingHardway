@@ -15,3 +15,15 @@ do
   echo $full_append$files >> file_list.txt 
 done
 
+echo "showing the file list. Ensure there is README.md file in parent directory"
+
+echo -e >> ../README.md
+
+echo $folder_name" dataset" >> ../README.md
+
+echo -e >> ../README.md
+
+cat file_list.txt >> ../README.md
+
+echo -e ../README.md
+
