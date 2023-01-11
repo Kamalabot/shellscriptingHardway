@@ -27,3 +27,15 @@ Tunnel config for postgres: ssh -L 5433:localhost:5432 kali@192.168.13.229
 pg_dump -h localhost -U postgres test > test_database.sql
 to write data back in database psql -d theroodb -f throoedb.sql
 if there is datestyle error then use SET DateStyle TO European;
+The database has to be designed at physical, logical and view level
+The datamodels are relational, Entity-Relational, Object-based, Semistructructed data models. Object Relational data model is also persent
+storage manager stores, retrieves and updates data
+Atomicity is all or none, to maintain consistency and durable. The issue has to be isolated transaction
+Data definition or schema is stored in data dictionary
+Data model is conceptual tool to describe Data + relationship + semantics + Constraints
+row is dbms is tuple and a column is the attribute
+When a domain is said to atomic, it is indivisible in nature. That is, it cannot be divided into subparts. The Dates, Phonenumbers, registration numbers etc can be considered indivisible and divisble at the same time.
+To access the data, table name, primary key and column name is used
+Super key and Candidate key, which is minimal key out of all super keys, primary key is unique key without null values
+in procedural QL the data needed and how it has to be retrived is mentioned. But in Non Procedural, the procedure is not mentioned
+adding unique to column makes it alternate key
