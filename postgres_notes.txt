@@ -7,6 +7,8 @@ There can empty spaces and 'null' mentioned cells. The later can be handled by c
 There are DELIMITER E'delimiter' option for using \t with CSV, but reading the documentation informed that is wrong way of doing it. Need to use the Text mode
 COPY hr_table(employee_id, first_name, last_name, email, phone, hire_dt, job_id, salary, commission, manager_id, department_id) FROM 'hr_employees.csv' WITH (FORMAT TEXT);
 Entity relation diagram can be taken from dbeaver application, using the view ER diagram is clicked. The diagram can be saved and opened in any of the draw_io tools
+Below copy command needs to be executed from the database prompt only
+\copy music_analysis from music.csv header csv delimiter ',';
 
 Steps to understand Data:
 
@@ -39,3 +41,12 @@ To access the data, table name, primary key and column name is used
 Super key and Candidate key, which is minimal key out of all super keys, primary key is unique key without null values
 in procedural QL the data needed and how it has to be retrived is mentioned. But in Non Procedural, the procedure is not mentioned
 adding unique to column makes it alternate key
+
+su - postgres -c '/usr/lib/postgresql/9.6/bin/pg_ctl stop -D /var/lib/postgresql/data'
+cp -r /var/lib/postgresql/data /dev/shm
+su - postgres -c '/usr/lib/postgresql/9.6/bin/pg_ctl -D /dev/shm start'
+
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO hive;
+GRANT USAGE ON SCHEMA public TO your_user;
+GRANT ALL PRIVILEGES ON SCHEMA public TO hive;
+
