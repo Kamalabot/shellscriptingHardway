@@ -56,4 +56,6 @@ host    all             hive            127.0.0.1/32            trust
 host    replication     hive            127.0.0.1/32            trust
 host    all             hive            172.17.0.0/16           trust
 
-
+#The schema inside the database can be listed 
+\dn : list of the schemas
+SET schema 'schema name'
