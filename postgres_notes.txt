@@ -59,3 +59,4 @@ host    all             hive            172.17.0.0/16           trust
 #The schema inside the database can be listed 
 \dn : list of the schemas
 SET schema 'schema name'
+PGPASSWORD=wrangler psql -U postgres -h pipeline-tank.coc5gkht2i7a.us-east-1.rds.amazonaws.com -d test < test_db.sql
