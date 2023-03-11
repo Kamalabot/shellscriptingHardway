@@ -60,3 +60,7 @@ host    all             hive            172.17.0.0/16           trust
 \dn : list of the schemas
 SET schema 'schema name'
 PGPASSWORD=wrangler psql -U postgres -h pipeline-tank.coc5gkht2i7a.us-east-1.rds.amazonaws.com -d test < test_db.sql
+ACID is Atomic, Consistent, Isolated and Durable
+Database normalization is mainly used to:Eliminate reduntant data.Ensure data is logically stored (results in a more flexible data model).
+0NF: Not Normalized:The data in the table below is not normalized because it contains repeating attributes (contact1, contact2,...).
+1NF: No Repeating Groups:In the first normal form, an entity contains no repeating groups and all attributes must have a unique name.
